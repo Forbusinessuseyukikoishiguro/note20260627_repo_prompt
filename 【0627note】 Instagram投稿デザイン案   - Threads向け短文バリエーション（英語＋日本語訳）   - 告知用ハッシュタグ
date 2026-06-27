@@ -1,0 +1,306 @@
+# 【AI資格者が教える】Claudeで業務設計を高速化する  
+要件定義書・詳細設計書・画面遷移図・ER図を“量産”するプロンプト集（完全版）  
+Instagram / Threads 告知テンプレつき
+
+Claude を使うと、システム設計ドキュメントを **構造化された Markdown で一括生成** できます。
+
+本記事では：
+
+- 要件定義書  
+- 詳細設計書  
+- 実装仕様書  
+- UIフロー（画面遷移図）  
+- ER図  
+- デバッグ手順  
+- 仕様変更手順  
+- テスト計画  
+- テスト結果  
+- バージョン管理（SemVer＋日付刻印）  
+
+これらを **1つのプロンプトで量産できるテンプレート集** を公開します。
+
+さらに：
+
+- Instagram投稿デザイン案  
+- Threads向け短文バリエーション（英語＋日本語訳）  
+- 告知用ハッシュタグ  
+
+もセットでまとめています。
+
+---
+
+# 1. 包括的な技術仕様書（Markdown）生成プロンプト  
+（完全再現プロンプト）
+
+```md
+あなたは「技術仕様書の専門家」かつ「嘘をつかないAI」です。
+
+以下の要件に基づき、実装（v4.2 PRO）に忠実な  
+包括的な技術仕様書（Markdown）を1本にまとめて作成してください。
+
+【含める内容】
+1. 要件定義書
+2. 詳細設計書
+3. 実装仕様書
+4. バグ発生時のデバッグ手順
+5. 修正方法（仕様変更手順）
+6. 商用テスト方法
+7. テスト結果テンプレート
+8. CHANGELOG（バージョニング規約付き）
+9. CR（変更依頼書）テンプレート
+10. JSONスキーマ（v4.2 PRO準拠）
+11. JSON検証手順
+12. 納品物一覧
+13. すべてMarkdownで統合
+
+【原則】
+・推測禁止  
+・未定義は未定義と書く  
+・見出し階層は最大3階層  
+・最後に「v4.2-PRO（YYYY-MM-DD）」を刻印
+```
+
+---
+
+# 2. 仕様変更・CR対応プロンプト
+
+```md
+あなたは「仕様変更管理の専門家」です。
+
+以下の技術仕様書（v4.2 PRO）をもとに、
+仕様変更プロセス・CR・影響範囲分析・再テスト項目を作成してください。
+
+【出力内容】
+1. 仕様変更プロセス
+2. CRテンプレート
+3. 影響範囲分析
+4. 修正後の再テスト項目
+5. バージョンアップ規約（SemVer＋日付刻印）
+```
+
+---
+
+# 3. 商用テスト計画プロンプト
+
+```md
+あなたは「QAエンジニア」です。
+
+以下の実装（v4.2 PRO）に基づき、
+商用テスト計画を作成してください。
+
+【出力内容】
+1. テスト目的
+2. テスト観点
+3. テストケース一覧
+4. 合格基準
+5. 不合格時の対応
+6. バージョンアップ手順（PRO刻印）
+```
+
+---
+
+# 4. テスト結果レポート生成プロンプト
+
+```md
+あなたは「テスト結果レポートの専門家」です。
+
+以下のテストケースに基づき、
+テスト結果レポートを作成してください。
+
+【出力内容】
+1. 実行日
+2. 実行者
+3. 結果（Pass/Fail）
+4. 不具合一覧
+5. 修正内容
+6. 再テスト結果
+7. バージョン刻印
+```
+
+---
+
+# 5. 100%嘘をつかない技術文書プロンプト
+
+```md
+あなたは「嘘をつかないAI」です。
+
+以下の実装（v4.2 PRO）をもとに、
+100%忠実な技術文書を作成してください。
+
+【禁止事項】
+・推測  
+・存在しない仕様  
+・曖昧な表現  
+
+【許可される表現】
+・未定義  
+・仕様に記載なし  
+・情報不足のため記述不可  
+
+最後に  
+v4.2-PRO（YYYY-MM-DD）  
+を刻印してください。
+```
+
+---
+
+# 6. Instagram投稿デザイン案（構図テンプレ）
+
+Instagramは **視覚構成が命**。  
+以下は「AI臭さゼロ」「研修講師向け」「情報設計が強い」構図テンプレ。
+
+---
+
+## ■ デザイン案 A：情報ブロック型
+
+```
+[上部]  
+Claudeでシステム設計を高速化
+
+[中央]  
+・要件定義  
+・詳細設計  
+・UIフロー  
+・ER図  
+→ すべてMarkdownで自動生成
+
+[下部]  
+AI資格者が作ったプロンプトパック  
+「保存して後で使う」誘導
+```
+
+---
+
+## ■ デザイン案 B：研修講師向け
+
+```
+[上部]  
+IT研修講師のためのAI活用
+
+[中央]  
+Claudeで作れるもの  
+- 要件定義書  
+- 詳細設計書  
+- 実装仕様書  
+- ER図  
+- UIフロー  
+
+[下部]  
+プロンプトパック公開中
+```
+
+---
+
+## ■ デザイン案 C：ミニマル
+
+```
+[中央大きく]  
+Claude Prompt Pack  
+System Design / Markdown
+
+[下部]  
+Requirements  
+Design Specs  
+UI Flow  
+ER Diagram  
+→ Auto‑generated
+```
+
+---
+
+# 7. Threads向け短文バリエーション（英語＋日本語訳）
+
+---
+
+## ■ Version 1（英語：汎用）
+
+```
+Accelerate your system design workflow with Claude.
+A complete prompt pack for generating requirements, design specs, UI flows, and ERDs — all in clean Markdown.
+
+Save this post if you want the prompt pack.
+```
+
+**日本語訳**
+
+```
+Claudeでシステム設計ワークフローを加速させる。
+要件定義、設計仕様、UIフロー、ER図をMarkdownで生成する完全プロンプトパック。
+
+プロンプトが欲しい人は保存してください。
+```
+
+---
+
+## ■ Version 2（英語：IT講師向け）
+
+```
+Teaching IT? Claude can generate your entire documentation stack:
+Requirements, design specs, UI flows, ERDs — all in Markdown.
+
+Built by an AI‑certified instructor for trainers and course creators.
+Save this post to get the prompt pack.
+```
+
+**日本語訳**
+
+```
+ITを教えている人へ。
+Claudeは要件定義から設計仕様、UIフロー、ER図まで、すべてMarkdownで生成できます。
+
+AI資格者が講師向けに作ったプロンプトパック。
+保存して受け取ってください。
+```
+
+---
+
+## ■ Version 3（英語：短く強い）
+
+```
+Claude can write your system design docs.
+Requirements → Specs → UI Flow → ERD.
+
+Save this post for the prompt pack.
+```
+
+**日本語訳**
+
+```
+Claudeはシステム設計ドキュメントを生成できます。
+要件 → 仕様 → UIフロー → ER図。
+
+プロンプトパックは保存して受け取ってください。
+```
+
+---
+
+# 8. Instagram / Threads ハッシュタグ
+
+```
+#ClaudeAI #SystemDesign #RequirementsEngineering #DesignSpecs
+#UIFlow #ERDiagram #PromptEngineering #AIWorkflow
+#TechTraining #ITInstructor #CourseCreator #MarkdownDocs
+#AITools #BuildInPublic
+```
+
+---
+
+# 9. まとめ
+
+このプロンプト集を使えば、Claude を **システム設計ドキュメント自動生成ツール** として活用できます。
+
+- IT研修講師  
+- Udemy講師  
+- エンジニア  
+- PM  
+- テックリード  
+
+に特におすすめです。
+
+---
+
+# ▼note  
+[https://note.com/yukikkoaimanabi/n/nf209da0a54dd](https://note.com/yukikkoaimanabi/n/nf209da0a54dd)
+
+---
+
